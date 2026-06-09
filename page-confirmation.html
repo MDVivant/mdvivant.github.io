@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M.D-Vivant — Bienvenue</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #0d1b2e;
+      color: #f5f0e8;
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 100vh;
+      padding: 48px 24px 40px;
+    }
+
+    .top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      width: 100%;
+    }
+
+    .logo-box {
+      border: 2px solid #c9a84c;
+      border-radius: 12px;
+      padding: 14px 32px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-box span {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      font-size: 1.6rem;
+      letter-spacing: 0.1em;
+      color: #c9a84c;
+    }
+
+    .divider {
+      width: 40px;
+      height: 1px;
+      background-color: #c9a84c;
+      opacity: 0.5;
+      margin: 32px 0;
+    }
+
+    .main-message {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      font-size: clamp(1.6rem, 6vw, 2.2rem);
+      line-height: 1.25;
+      text-align: center;
+      color: #f5f0e8;
+      letter-spacing: 0.01em;
+      max-width: 420px;
+    }
+
+    .subtitle {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: clamp(0.9rem, 3vw, 1rem);
+      text-align: center;
+      color: #d4cfc8;
+      line-height: 1.7;
+      max-width: 360px;
+      margin-top: 20px;
+    }
+
+    .bottom {
+      text-align: center;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 32px;
+      background-color: #c9a84c;
+      color: #0d1b2e;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 15px 32px;
+      border-radius: 3px;
+      transition: opacity 0.2s;
+    }
+
+    .download-btn:hover {
+      opacity: 0.88;
+    }
+
+    .closing-line {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: clamp(1.1rem, 4vw, 1.35rem);
+      color: #c9a84c;
+      letter-spacing: 0.02em;
+    }
+
+    @media (min-width: 600px) {
+      body {
+        padding: 64px 32px 56px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top">
+    <div class="logo-box"><span>M.D-Vivant</span></div>
+
+    <div class="divider"></div>
+
+    <h1 class="main-message">Bienvenue dans l'univers M.D-Vivant.</h1>
+
+    <p class="subtitle">Félicitations. Tu viens de faire un choix que beaucoup n'osent pas — celui de te regarder en face. Ce chemin commence maintenant.</p>
+    <a href="https://mdvivant.github.io/enfinseconnaitre.pdf" class="download-btn">Télécharger mon livre</a>
+  </div>
+
+  <div class="bottom">
+    <p class="closing-line">La vie n'attend pas.</p>
+  </div>
+
+</body>
+</html>
