@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M.D-Vivant — Ton extrait t'attend</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #0d1b2e;
+      color: #f5f0e8;
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 16px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      padding: 16px;
+    }
+
+    .logo-box {
+      border: 2px solid #c9a84c;
+      border-radius: 12px;
+      padding: 12px 28px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-box span {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      font-size: 1.5rem;
+      letter-spacing: 0.1em;
+      color: #c9a84c;
+    }
+
+    .divider {
+      width: 40px;
+      height: 1px;
+      background-color: #c9a84c;
+      opacity: 0.6;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      font-size: clamp(1.4rem, 5vw, 1.85rem);
+      line-height: 1.25;
+      text-align: center;
+      letter-spacing: 0.01em;
+      color: #f5f0e8;
+    }
+
+    .body-text {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: clamp(0.78rem, 2.8vw, 0.92rem);
+      text-align: center;
+      line-height: 1.6;
+      color: #d4cfc8;
+      max-width: 340px;
+    }
+
+    .transition-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(0.95rem, 3.5vw, 1.1rem);
+      text-align: center;
+      line-height: 1.6;
+      color: #d4cfc8;
+      max-width: 340px;
+    }
+
+    .btn-primary {
+      display: block;
+      width: 100%;
+      background: linear-gradient(135deg, #c9a84c 0%, #b8943e 100%);
+      color: #0d1b2e;
+      border: none;
+      border-radius: 3px;
+      padding: 13px 20px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+      font-size: 0.88rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+
+    .btn-primary:hover {
+      opacity: 0.88;
+    }
+
+    .btn-secondary {
+      display: block;
+      width: 100%;
+      background: transparent;
+      color: #c9a84c;
+      border: 1px solid #c9a84c;
+      border-radius: 3px;
+      padding: 12px 20px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 0.84rem;
+      letter-spacing: 0.06em;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.2s, opacity 0.2s;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(201, 168, 76, 0.08);
+    }
+
+    .signature {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: clamp(0.95rem, 3.5vw, 1.1rem);
+      color: #c9a84c;
+      text-align: center;
+      opacity: 0.85;
+      margin-top: 4px;
+    }
+
+    @media (min-width: 600px) {
+      .container {
+        gap: 18px;
+        padding: 32px 24px;
+      }
+      .logo-box {
+        padding: 14px 32px;
+      }
+      .logo-box span {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="logo-box"><span>M.D-Vivant</span></div>
+
+    <div class="divider"></div>
+
+    <h1>C'est fait. Ton extrait t'attend.</h1>
+
+    <p class="body-text">
+      Il vient aussi d'être envoyé à ton adresse email — vérifie tes courriers indésirables si tu ne le vois pas.
+      Tu peux le télécharger tout de suite ci-dessous.
+    </p>
+
+    <a class="btn-primary" href="https://mdvivant.github.io/cequetuportessanslesavoir.pdf" target="_blank" rel="noopener">
+      Je télécharge mon extrait
+    </a>
+
+    <div class="divider"></div>
+
+    <p class="transition-text">
+      Si quelque chose résonne déjà en toi — si tu sens que c'est le bon moment —
+      le livre complet <em>Enfin se connaître</em> est là pour aller plus loin.
+      Pas dans six mois. Maintenant.
+    </p>
+
+    <a class="btn-secondary" href="https://contact-mdvivant.systeme.io/commande" target="_blank" rel="noopener">
+      Découvrir Enfin se connaître — 14,90&nbsp;€
+    </a>
+
+    <p class="signature">La vie n'attend pas.</p>
+
+  </div>
+</body>
+</html>
